@@ -6,4 +6,4 @@ st.write(
     "you don't have to go through it alone. I am always there for you, Okayy?"
 )
 
-st.image(r"D:\sending-love.gif") 
+st.image(r"sending-love.gif") 
