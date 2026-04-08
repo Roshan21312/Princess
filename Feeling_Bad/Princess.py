@@ -7,4 +7,4 @@ st.write(
 )
 
 st.image(r"Feeling_Bad/sending-love.gif") 
-st.audio(r"Feeling_Bad/Hey_Minnale_-_Amaran.mp3"
+st.audio(r"Feeling_Bad/Hey_Minnale_-_Amaran.mp3")
