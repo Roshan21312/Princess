@@ -56,14 +56,13 @@ User Input (Disease Name)
 **4. Report** — The top 5 papers are written to a `.txt` file:
 
 ```
-=== REPORT: ALZHEIMER DISEASE ===
+--- REPORT: ALZHEIMER---
 
-1. Amyloid precursor protein processing and Alzheimer's disease
+1. The evolving landscape of Alzheimer's disease therapy: From Aβ to tau.
    Score: 9
-   Genes: ['APP', 'PSEN1', 'APOE']
-   Drugs: ['Donepezil', 'Lecanemab']
-   Summary: Investigates APP cleavage pathways and their role in amyloid
-            plaque formation in Alzheimer's disease.
+   Genes: ['APP', 'PSEN1', 'MAPT']
+   Drugs: []
+   Summary: The paper discusses advancements in Alzheimer's disease therapy, highlighting the transition from amyloid β (Aβ) to tau-targeting approaches, progress in disease-modifying tau therapies, and future directions including combination therapies and targets beyond Aβ/tau.
 ```
 
 ---
@@ -92,12 +91,9 @@ Get a free Groq key at [console.groq.com](https://console.groq.com) · NCBI emai
 
 **Run**
 ```bash
-python medlit_pipeline.py
-# Enter disease name when prompted: Alzheimer disease
+python MedLit_AI.ipynb
+# Enter disease name when prompted: Alzheimer
 ```
-
-> ⚠️ Never commit your `.env` file. Add it to `.gitignore`.
-
 ---
 
 ## Author
