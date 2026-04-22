@@ -3,17 +3,8 @@
 Automated extraction of genes,drugs, and clinical insights from PubMed research papers using LLM powered NLP.
 
 **Overview** <br>
-**Problem Statement** <br>
-Biomedical researchers and students face an overwhelming volume of scientific literature. Manually reading, parsing, and summarizing dozens of PubMed papers for a single disease — just to identify relevant genes, drug targets, and key findings — is time-consuming, inconsistent, and does not scale.
-
-**Solution** <br>
-**MedLit AI** is an end-to-end pipeline that takes disease name as input and automatically:
-* Fetched the most relevant papers from PubMed(NCBI).
-* Uses an LLM to extract genes,drugs, and summaries from each paper.
-* Scores and ranks papers by scientific richness and recency.
-* Outputs a structured, human-readble research report.
-
-This tool is designed to accelerate literatur reviews for researchers, bioinformaticians, and students, reducing hours of manual work to seconds.
+Biomedical researchers face an overwhelming volume of scientific literature. Manually reading and summarizing dozens of PubMed papers just to identify relevant genes, drug targets, and key findings is time-consuming and does not scale.
+**MedLit AI** solves this by taking a disease name as input and automatically fetching the most relevant PubMed papers, extracting biological entities using an LLM, scoring papers by scientific richness and recency, and delivering a structured research report — reducing hours of manual review to seconds.
 
 **Key Features** <br>
 * PubMed Integration -- Queries NCBI's Entrez API with biomedically enriched search  terms (gene, protein, mutation, pathway, drug, therapy)
@@ -29,31 +20,31 @@ Database: NCBI PubMed via Entrez(BioPython)
 LLM Provider: Groq API
 LLM Model: qwen/qwen3-32b
 
-**Pipeline Architecture**
-User Input (Disease Name)
-        │
-        ▼
-┌───────────────────┐
-│  PubMed Fetch     │  ← NCBI Entrez API (BioPython)
-│  (Top 10 papers)  │
-└────────┬──────────┘
-         │
-         ▼
-┌───────────────────┐
-│  LLM Extraction   │  ← Groq API / qwen3-32b
-│  Genes, Drugs,    │     Structured JSON prompt
-│  Summary          │     per paper
-└────────┬──────────┘
-         │
-         ▼
-┌───────────────────┐
-│  Relevance Scorer │  ← Entity count + recency weighting
-└────────┬──────────┘
-         │
-         ▼
-┌───────────────────┐
-│  Report Generator │  ← Top 5 papers, saved as .txt
-└───────────────────┘
+**Pipeline Architecture** <br>
+User Input (Disease Name) <br>
+        │<br>
+        ▼<br>
+┌───────────────────┐                                <br>
+│  PubMed Fetch     │  ← NCBI Entrez API (BioPython) <br>
+│  (Top 10 papers)  │                                <br>
+└────────┬──────────┘                                <br>
+         │<br>
+         ▼<br>
+┌───────────────────┐                         <br>
+│  LLM Extraction   │  ← Groq API / qwen3-32b <br>
+│  Genes, Drugs,    │     Structured JSON prompt <br>
+│  Summary          │     per paper              <br>
+└────────┬──────────┘                            <br>
+         │<br>
+         ▼<br>
+┌───────────────────┐                                     <br>
+│  Relevance Scorer │  ← Entity count + recency weighting <br>
+└────────┬──────────┘                                     <br>
+         │<br>
+         ▼<br>
+┌───────────────────┐                                <br>
+│  Report Generator │  ← Top 5 papers, saved as .txt <br>
+└───────────────────┘                                <br>
 
 **How it works**
 1. Fetch Papers
