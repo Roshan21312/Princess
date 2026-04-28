@@ -17,32 +17,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-/* Main app background */
-[data-testid="stAppViewContainer"] {
-    background-color: #2b0f2f;
-}
-
-/* Content area */
-[data-testid="stAppViewContainer"] .main {
-    background-color: #2b0f2f;
-}
-
-/* Sidebar */
-[data-testid="stSidebar"] {
-    background-color: #1f0a22;
-}
-
-/* Remove header *
-
-/* Optional: text color */
-h1, h2, h3, h4, h5, h6, p, label {
-    color: #ffffff;
-}
-</style>
-""", unsafe_allow_html=True)
-
 # ------------------- SUPABASE -------------------
 
 SUPABASE_URL = st.secrets["SUPABASE_URL"]
