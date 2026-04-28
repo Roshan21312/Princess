@@ -17,6 +17,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+
 # ------------------- SUPABASE -------------------
 
 SUPABASE_URL = st.secrets["SUPABASE_URL"]
@@ -229,6 +230,27 @@ if edited_df is not None and len(edited_df) > 0:
     })
 
     st.line_chart(progress_df.set_index("Day"))
+
+st.markdown("""
+<style>
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+}
+.footer span {
+    color: red;
+    font-weight: bold;
+}
+</style>
+
+<div class="footer">
+    Made with love <span>❤️</span> by your's only Roshan Zambare
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 <style>
