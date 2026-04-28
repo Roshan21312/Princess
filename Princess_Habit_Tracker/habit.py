@@ -7,15 +7,15 @@ from supabase import create_client
 # ------------------- CONFIG -------------------
 st.set_page_config(page_title="Habit Tracker", layout="wide",initial_sidebar_state="collapsed")
 
-# st.markdown("""
-# <style>
-#     .block-container {
-#         padding-top: 2rem;
-#         padding-bottom: 0rem;
-#     }
+st.markdown("""
+<style>
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
     
-# </style>
-# """, unsafe_allow_html=True)
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 <style>
@@ -34,10 +34,7 @@ st.markdown("""
     background-color: #1f0a22;
 }
 
-/* Remove header */
-header {
-    visibility: hidden;
-}
+/* Remove header *
 
 /* Optional: text color */
 h1, h2, h3, h4, h5, h6, p, label {
