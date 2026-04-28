@@ -7,13 +7,42 @@ from supabase import create_client
 # ------------------- CONFIG -------------------
 st.set_page_config(page_title="Habit Tracker", layout="wide",initial_sidebar_state="collapsed")
 
+# st.markdown("""
+# <style>
+#     .block-container {
+#         padding-top: 2rem;
+#         padding-bottom: 0rem;
+#     }
+    
+# </style>
+# """, unsafe_allow_html=True)
+
 st.markdown("""
 <style>
-    .block-container {
-        padding-top: 2rem;
-        padding-bottom: 0rem;
-    }
-    
+/* Main app background */
+[data-testid="stAppViewContainer"] {
+    background-color: #2b0f2f;
+}
+
+/* Content area */
+[data-testid="stAppViewContainer"] .main {
+    background-color: #2b0f2f;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #1f0a22;
+}
+
+/* Remove header */
+header {
+    visibility: hidden;
+}
+
+/* Optional: text color */
+h1, h2, h3, h4, h5, h6, p, label {
+    color: #ffffff;
+}
 </style>
 """, unsafe_allow_html=True)
 
