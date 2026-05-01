@@ -6,5 +6,5 @@ st.write(
     "Here is some good energy, Sending you lots of energy and love"
 )
 
-st.image(r"Send_Good_Energy/love.gif") 
+st.image(r"Send_Good_Energy/pagal.gif") 
 st.audio(r"Send_Good_Energy/Hall_Of_Fame.mp3")
