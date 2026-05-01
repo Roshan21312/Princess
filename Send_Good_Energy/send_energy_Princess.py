@@ -6,5 +6,9 @@ st.write(
     "Here is some good energy, Sending you lots of energy and love"
 )
 
-st.image(r"Send_Good_Energy/baby-bear-brown.gif") 
+col1, col2, col3 = st.columns([1, 2, 1])  # middle column is wider
+
+with col2:
+    st.image(r"Send_Good_Energy/baby-bear-brown.gif") 
+
 st.audio(r"Send_Good_Energy/Hall_Of_Fame.mp3")
