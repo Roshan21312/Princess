@@ -7,7 +7,7 @@ st.write(
 )
 
 st.image(r"Send_Good_Energy/baby-bear-brown.gif") 
- st.markdown(
+st.markdown(
         f'<div style="display: flex; justify-content: center;">'
         f'<img src="Send_Good_Energy/baby-bear-brown.gif">'
         f'</div>',
