@@ -1,0 +1,8 @@
+[theme]
+# This sets the overall background to your dark purple
+backgroundColor = "#F8DADA"
+
+
+
+# Keeps all your text white
+textColor = "#000000"
