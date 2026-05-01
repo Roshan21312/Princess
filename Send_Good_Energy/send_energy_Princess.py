@@ -7,4 +7,10 @@ st.write(
 )
 
 st.image(r"Send_Good_Energy/baby-bear-brown.gif") 
+ st.markdown(
+        f'<div style="display: flex; justify-content: center;">'
+        f'<img src="Send_Good_Energy/baby-bear-brown.gif">'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
 st.audio(r"Send_Good_Energy/Hall_Of_Fame.mp3")
