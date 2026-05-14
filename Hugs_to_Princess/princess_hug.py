@@ -4,13 +4,13 @@ import base64
 st.set_page_config(layout="wide")
 
 # VIDEO
-with open("bg.mp4", "rb") as f:
+with open("Hugs_to_Princess/bg.mp4", "rb") as f:
     video_data = f.read()
 
 video_base64 = base64.b64encode(video_data).decode()
 
 
-with open("the-cats-love.gif", "rb") as f:
+with open("Hugs_to_Princess/the-cats-love.gif", "rb") as f:
     gif_data = base64.b64encode(f.read()).decode()
 
 
@@ -114,7 +114,7 @@ st.markdown("""
 import streamlit.components.v1 as components
 
 # LOAD AUDIO
-with open("phir_kabhi.mp3", "rb") as f:
+with open("Hugs_to_Princess/phir_kabhi.mp3", "rb") as f:
     audio_data = f.read()
 
 audio_base64 = base64.b64encode(audio_data).decode()
