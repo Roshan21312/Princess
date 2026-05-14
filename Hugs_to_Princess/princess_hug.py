@@ -10,7 +10,7 @@ with open("bg.mp4", "rb") as f:
 video_base64 = base64.b64encode(video_data).decode()
 
 
-with open("the-cats-love.gif", "rb") as f:
+with open("Hugs_to_Princess/the-cats-love.gif", "rb") as f:
     gif_data = base64.b64encode(f.read()).decode()
 
 # BACKGROUND
