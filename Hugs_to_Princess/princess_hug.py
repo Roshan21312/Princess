@@ -4,7 +4,7 @@ import base64
 st.set_page_config(layout="wide")
 
 # VIDEO
-with open("bg.mp4", "rb") as f:
+with open("Hugs_to_Princess/bg.mp4", "rb") as f:
     video_data = f.read()
 
 video_base64 = base64.b64encode(video_data).decode()
