@@ -4,13 +4,13 @@ import base64
 st.set_page_config(layout="wide")
 
 # VIDEO
-with open("bg.mp4", "rb") as f:
+with open("Stay_Hydrated_Princess/bg.mp4", "rb") as f:
     video_data = f.read()
 
 video_base64 = base64.b64encode(video_data).decode()
 
 
-with open("drink-water-have-a-drink.gif", "rb") as f:
+with open("Stay_Hydrated_Princess/drink-water-have-a-drink.gif", "rb") as f:
     gif_data = base64.b64encode(f.read()).decode()
 
 
@@ -118,7 +118,7 @@ st.markdown("""
 
 st.markdown("<br><br><br><br>",unsafe_allow_html=True)
 
-with open("thirsty-shogo.gif", "rb") as f:
+with open("Stay_Hydrated_Princess/thirsty-shogo.gif", "rb") as f:
     gif_data2 = base64.b64encode(f.read()).decode()
 
 st.markdown(f"""
